@@ -1,0 +1,85 @@
+@import "../../themes/vars.less";
+.footer {
+    height: 96px;
+    line-height: 96px;
+    text-align: center;
+    font-size: 12px;
+    color: #b3b3b3;
+    background: #2e3033;
+    width: 100vw;
+    a {
+        color: #b3b3b3;
+    }
+    .footerWrap {
+        padding-top: 14px;
+        color: #b3b3b3;
+        line-height: 21px;
+        zoom: 1;
+        &:after {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: " ";
+            clear: both;
+            height: 0;
+        }
+        >div {
+            float: left;
+        }
+        .InfoWrap,
+        .contactWrap {
+            margin-left: 50px;
+            padding-top: 15px;
+            text-align: left;
+            a,
+            span {
+                margin: 0 10px;
+            }
+            div {
+                margin-bottom: 5px;
+            }
+        }
+        .contactWrap {
+            float: right;
+            .title {
+                font-size: 14px;
+                padding-left: 10px;
+            }
+            a .anticon {
+                font-size: 18px;
+                vertical-align: -3px;
+                margin-right: 3px;
+            }
+        }
+    }
+    .logoWrap {
+        .zhuozhiLogo {
+            background: url(../../assets/img/zhuozhiLogo.png) no-repeat;
+            width: 114px;
+            height: 56px;
+            margin-left: 38px;
+            margin-bottom: 2px;
+        }
+        .eDaiLogo {
+            background: url(../../assets/img/eDaiLogo.png) no-repeat;
+            width: 102px;
+            height: 52px;
+            margin-left: 12px;
+            margin-bottom: 6px;
+        }
+        .link {
+            color: #b8b9ba;
+            display: inline-block;
+            height: 18px;
+            line-height: 18px;
+            margin-bottom: 6px;
+            padding-left: 18px;
+        }
+    }
+    .dividingLine {
+        background: #b4b4b5;
+        height: 32px;
+        margin: 13px 13px 0 13px;
+        width: 1px;
+    }
+}
