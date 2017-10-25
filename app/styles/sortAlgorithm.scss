@@ -1,0 +1,19 @@
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+.list {
+  margin-bottom: 10px;
+  li {
+    $size: 40px;
+    border: 1px solid red;
+    cursor: pointer;
+    display: inline-block;
+    height: $size;
+    line-height: $size;
+    list-style-type: none;
+    margin-right: 5px;
+    text-align: center;
+    width: $size;
+  }
+}
