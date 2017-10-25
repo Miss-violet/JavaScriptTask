@@ -1,52 +1,46 @@
 {
   "private": true,
-  "dependencies": {
-    "antd": "^2.10.0",
-    "classnames": "^2.2.5",
-    "draftjs-to-markdown": "^0.4.0",
-    "dva": "^1.2.0",
-    "dva-loading": "^0.2.0",
-    "echarts": "^3.6.2",
-    "lodash": "^4.17.4",
-    "nprogress": "^0.2.0",
-    "qs": "^6.2.0",
-    "react": "^15.4.4",
-    "react-countup": "1.3.0",
-    "react-dom": "^15.4.1",
-    "react-draft-wysiwyg": "^1.8.1",
-    "react-helmet": "^5.0.0",
-    "recharts": "^0.19.0",
-    "redux-logger": "^3.0.1"
+  "engines": {
+    "node": ">=4"
   },
   "devDependencies": {
-    "axios": "^0.15.3",
-    "babel-eslint": "^6.1.2",
-    "babel-plugin-dev-expression": "^0.2.1",
-    "babel-plugin-dva-hmr": "^0.3.2",
-    "babel-plugin-import": "^1.1.1",
-    "babel-plugin-transform-runtime": "^6.9.0",
-    "babel-polyfill": "^6.23.0",
-    "babel-runtime": "^6.9.2",
-    "draftjs-to-html": "^0.7.0",
-    "eslint": "^3.17.1",
-    "eslint-config-airbnb": "^9.0.1",
-    "eslint-plugin-import": "^1.16.0",
-    "eslint-plugin-jsx-a11y": "^1.4.2",
-    "eslint-plugin-react": "^5.1.1",
-    "jsonp": "^0.2.1",
-    "less-vars-to-js": "^1.1.2",
-    "mockjs": "^1.0.1-beta3",
-    "path-to-regexp": "^1.7.0",
-    "rc-tween-one": "^1.0.0",
-    "redbox-react": "^1.2.10",
-    "roadhog": "0.6.0-beta.6"
+    "babel-core": "^6.4.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-register": "^6.5.2",
+    "browser-sync": "^2.2.1",
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-babel": "^6.1.1",
+    "gulp-cache": "^0.4.2",
+    "gulp-cssnano": "^2.0.0",
+    "gulp-eslint": "^3.0.0",
+    "gulp-filter": "^4.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^3.0.0",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.0.0",
+    "main-bower-files": "^2.5.0",
+    "run-sequence": "^1.2.2",
+    "wiredep": "^4.0.0"
   },
-  "pre-commit": [
-    "lint"
-  ],
-  "scripts": {
-    "dev": "set BROWSER=none&&set HOST=0.0.0.0&&roadhog server",
-    "lint": "eslint --fix --ext .js src",
-    "build": "roadhog build --analyze"
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true,
+      "browser": true
+    },
+    "rules": {
+      "quotes": [
+        2,
+        "single"
+      ]
+    }
   }
 }
